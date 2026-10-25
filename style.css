@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "New Times Roman", serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #e3e6f3;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  position: relative;
+  transition: 0.3s ease;
+}
+.header ul li a:hover,
+.header ul li a.active {
+  color: #0d6efd;
+}
+.hero {
+  background-image: url(img/hero.png);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero h4 {
+  font-size: 20px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.hero h2,
+h1 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.hero p {
+  font-size: 16px;
+  padding-bottom: 15px;
+  color: red;
+}
+.hero button {
+  background-image: url(img/button.png);
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+#feature .box {
+  width: 180px;
+  text-align: center;
+  padding-bottom: 20px;
+  border: 1px solid #cce7d0;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  margin: 50px 10px;
+}
+#feature .box img {
+  width: 180px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#feature .box h6 {
+  font-size: 14px;
+  padding: 15px 15px 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: #088178;
+  background-color: #fddde4;
+  line-height: 1px;
+  border-radius: 4px;
+}
+#feature .box:hover {
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+}
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#feature .box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+#feature .box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#feature .box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#feature .box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#feature .box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+/* ======================================================= */
+.product-1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.pro:hover {
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.6);
+}
+
+.product-1 h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: brown;
+}
+.product-1 p {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+.product-1 .pro .des {
+  text-align: start;
+  padding: 15px 0;
+}
+.product-1 .pro .des span {
+  color: #606063;
+  font-size: 15px;
+}
+.product-1 .pro .des h5 {
+  font-size: 17px;
+  color: #1a1a1a;
+  padding-top: 7px;
+}
+.product-1 .pro .des .star i {
+  color: rgba(243, 181, 25);
+  font-size: 14px;
+}
+.product-1 .pro .des h4 {
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #088178;
+}
+/* ====================================================================== */
+#banner {
+  margin-top: 40px;
+  background-image: url(img/banner/b2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+#banner h4 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: #fff;
+}
+#banner h2 {
+  font-size: 40px;
+  font-family: 700;
+  padding-bottom: 40px;
+  color: #fff;
+}
+#banner span {
+  color: red;
+}
+button.normal {
+  padding: 15px 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button.normal:hover {
+  background-color: #088178;
+  color: #fff;
+}
